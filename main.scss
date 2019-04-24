@@ -1,4 +1,9 @@
+// VARIABLES
+
 $color-grey-light: #f9f7f6;
+
+
+// BASE
 
 *,
 *::before,
@@ -17,6 +22,9 @@ html {
     line-height: 1.6;
     font-family: Circular Std, sans-serif;
 }
+
+
+// COMPONENTS/UTILITIES
 
 .heading {
     &__primary {
@@ -69,6 +77,27 @@ html {
     }
 }
 
+.group {
+    &__heading {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__paragraph {
+        margin-left: 3.2rem;
+    }
+
+    &__img {
+        display: inline-block;
+        width: 3rem;
+        vertical-align: middle;
+        margin-bottom: 1.3rem;
+    }
+}
+
+
+//SECTION LAYOUT
+
 .section__landing {
     background-image: url(img/bg_01.png);
     background-repeat: no-repeat;
@@ -105,6 +134,8 @@ html {
 
     position: relative;
 }
+
+//NAV BAR
 
 .nav {
     display: flex;
@@ -146,6 +177,8 @@ html {
     }
 }
 
+//LANDING SECTION
+
 .landing__wrapper {
     margin: auto;
     width: 88%;
@@ -166,7 +199,7 @@ html {
     }
 
     &-img {
-        width: 42rem;
+        width: 32rem;
         margin-top: -5.5rem;
     }
 
@@ -176,53 +209,46 @@ html {
     }
 }
 
-.group {
-    &__heading {
-        display: inline-block;
-        vertical-align: middle;
+
+//FEATURES SECTION
+
+.calender__group {
+    position: absolute;
+    top: 11rem;
+    left: 11%;
+}
+
+.time__group {
+    position: absolute;
+    bottom: 5rem;
+    right: 15%;
+}
+
+
+//SOCIAL SECTION
+
+.social {
+    &__wrapper {
+        width: 88%;
+        margin: auto;
     }
 
-    &__paragraph {
-        margin-left: 3.2rem;
+    &__content {
+        width: 88%;
+        margin: 15rem auto 0 auto;
+        display: flex;
+        justify-content: space-between;
     }
 
     &__img {
-        display: inline-block;
-        width: 3rem;
-        vertical-align: middle;
-        margin-bottom: 1.3rem;
-    }
-
-    &-calender {
-        position: absolute;
-        top: 11rem;
-        left: 11%;
-    }
-
-    &-time {
-        position: absolute;
-        bottom: 5rem;
-        right: 15%;
+        width: 50rem;
+        margin-top: -5rem;
+        margin-bottom: 10rem;
     }
 }
 
-.social__wrapper {
-    width: 88%;
-    margin: auto;
-}
 
-.social__content {
-    width: 88%;
-    margin: 15rem auto 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.social__img {
-    width: 50rem;
-    margin-top: -5rem;
-    margin-bottom: 10rem;
-}
+//FOOTER
 
 .footer {
     width: 70%;

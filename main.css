@@ -67,6 +67,22 @@ html {
   background-color: #1f2122;
 }
 
+.group__heading {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.group__paragraph {
+  margin-left: 3.2rem;
+}
+
+.group__img {
+  display: inline-block;
+  width: 3rem;
+  vertical-align: middle;
+  margin-bottom: 1.3rem;
+}
+
 .section__landing {
   background-image: url(img/bg_01.png);
   background-repeat: no-repeat;
@@ -179,7 +195,7 @@ html {
 }
 
 .landing__content-img {
-  width: 42rem;
+  width: 32rem;
   margin-top: -5.5rem;
 }
 
@@ -188,29 +204,13 @@ html {
   opacity: 0.8;
 }
 
-.group__heading {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.group__paragraph {
-  margin-left: 3.2rem;
-}
-
-.group__img {
-  display: inline-block;
-  width: 3rem;
-  vertical-align: middle;
-  margin-bottom: 1.3rem;
-}
-
-.group-calender {
+.calender__group {
   position: absolute;
   top: 11rem;
   left: 11%;
 }
 
-.group-time {
+.time__group {
   position: absolute;
   bottom: 5rem;
   right: 15%;
